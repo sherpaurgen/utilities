@@ -31,6 +31,7 @@ func gtail(filename string) error {
 		return err
 	}
 	reader := bufio.NewReader(file)
+	//	defaultBufSize = 4096 byte
 	for {
 		line, err := reader.ReadString('\n')
 		if err != nil {
@@ -50,7 +51,7 @@ func gtail(filename string) error {
 
 func main() {
 	if len(os.Args) != 2 {
-		fmt.Println("Usage: go run main.go <filename>")
+		fmt.Println("Usage: go run gtail.go <filename>")
 		return
 	}
 
