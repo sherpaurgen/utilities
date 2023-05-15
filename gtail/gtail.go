@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 	"time"
 )
@@ -44,5 +45,19 @@ func gtail(filename string) error {
 
 		// Sleep for small interval 50ms before reading again
 		time.Sleep(50 * time.Millisecond)
+	}
+}
+
+func main() {
+	if len(os.Args) != 2 {
+		fmt.Println("Usage: go run main.go <filename>")
+		return
+	}
+
+	filename := os.Args[1]
+
+	err := gtail(filename)
+	if err != nil {
+		log.Fatal(err)
 	}
 }
