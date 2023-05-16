@@ -45,7 +45,7 @@ func gtail(filename string) error {
 		}
 
 		// Sleep for small interval 50ms before reading again
-		time.Sleep(50 * time.Millisecond)
+		time.Sleep(900 * time.Millisecond)
 	}
 }
 
