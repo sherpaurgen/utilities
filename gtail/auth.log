@@ -1,0 +1,4 @@
+May 18 04:33:48 kafka-vm1 sshd[258869]: error: kex_exchange_identification: Connection closed by remote host
+May 18 04:33:48 kafka-vm1 sshd[258869]: Connection closed by 205.210.31.132 port 54013
+May 18 04:38:01 kafka-vm1 sshd[258912]: Unable to negotiate with 218.92.0.52 port 42316: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha1 [preauth]
+
